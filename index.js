@@ -37,6 +37,6 @@ class User {
       opts.text = opts.text || text
     }
     if (!chatId) throw "No parameters were passed"
-    return api("sendMessage", opts)
+    return this.api("sendMessage", opts)
   }
 }
